@@ -6,6 +6,21 @@ For projects requiring some data with texts as well as image url, we'd be referr
 
 The same data as above can also be retrieved using a GET request on Newsapi.org api using the link: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=your-newsapidotorg-api-key
 
+There will be three classes required to handle the response from the Newapi.org for the endpoint **/v2/top-headlines** and they can be found(*with Parcelable implemented*) separately in Java and Kotlin both. The links to those files are:
+
+
+**Java** sources:
+
+*NewsResponse* class written in Java can be found at: https://github.com/rajtheinnovator/EnDataSource/blob/master/NewsResponse.java
+*Article* class written in Java can be found at: https://github.com/rajtheinnovator/EnDataSource/blob/master/Article.java
+*Source* class written in Java can be found at: https://github.com/rajtheinnovator/EnDataSource/blob/master/Source.java
+
+**Kotlin** Sources:
+*NewsResponse, Article* and *Source* classes written in Kotlin can be found inside the Kotlin file named **NewsResponseKotlin.kt** at: https://github.com/rajtheinnovator/EnDataSource/blob/master/NewsResponseKotlin.kt
+
+
+
+
 ### Custom model classes for serving data when we're not using any api or json source to get our data
 Here, we've data source which we can use whenever we want to put data from some custom model and not from any JSON source or api. This data source can also be used in case we need to implement parent child relationship in some database example project. In that case, we can make the **sellerId** as a **foreignKey** in **Product** POJO class.
 
